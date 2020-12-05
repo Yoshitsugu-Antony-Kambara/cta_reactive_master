@@ -4,6 +4,7 @@ target 'CtaReactiveMaster' do
   use_frameworks!
 
   pod 'Nuke'
+  pod 'Alamofire'
 
   target 'CtaReactiveMasterTests' do
     inherit! :search_paths
