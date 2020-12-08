@@ -50,9 +50,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         url = articles[indexPath.row].url
-        //応急処置で、選択されたセルのurlへ飛ぶように実装した
-        let  selectedURL = URL(string: url)
-        UIApplication.shared.open(selectedURL!)
-        //self.performSegue(withIdentifier: "toNews", sender: nil)
+        
+        let next = WebViewController()
+        next.urlString = url                            //値渡し
+        present(next, animated: true, completion: nil)  //画面遷移
     }
 }
