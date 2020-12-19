@@ -28,7 +28,7 @@ final class HomeViewController: UIViewController {
     }
 
     func getArticles() {
-        AF.request("https://newsapi.org/v2/top-headlines?country=us&apiKey=583fb19028bd4ef688432161cd5cc0fd")
+        AF.request("https://newsapi.org/v2/top-headlines?country=\(country)&apiKey=\(KeyManager().getValue(key: "APIkey"))")
             .response{(response) in
                 guard let json = response.data else { return }
                 //try!だと、壊れたjosnが返ってきたときにクラッシュしちゃうから、try catch に変えた方がいいのかも...
