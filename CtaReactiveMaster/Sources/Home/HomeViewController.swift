@@ -31,9 +31,12 @@ final class HomeViewController: UIViewController {
             .response{(response) in
                 guard let json = response.data else { return }
                 //try!だと、壊れたjosnが返ってきたときにクラッシュしちゃうから、try catch に変えた方がいいのかも...
-                let rest: Res = try! JSONDecoder().decode(Res.self, from: json)
-                self.articles = rest.articles
-                self.table.reloadData()
+                DispatchQueue.main.async {
+                    let rest: Res = try! JSONDecoder().decode(Res.self, from: json)
+                    self.articles = rest.articles
+                    self.table.reloadData()
+                }
+                
             }
     }
 }
