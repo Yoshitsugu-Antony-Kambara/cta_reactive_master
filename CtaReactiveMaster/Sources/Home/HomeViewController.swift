@@ -19,7 +19,6 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("start")
         table.dataSource = self
         table.delegate = self
         table.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
