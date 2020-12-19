@@ -14,6 +14,8 @@ final class HomeViewController: UIViewController {
     
     var articles: [Article] = []
     var url: String!
+    var country: String = "us"
+    fileprivate let refreshCtl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,17 +39,22 @@ final class HomeViewController: UIViewController {
     }
 }
 
+
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return articles.count
       }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath ) as! HomeTableViewCell
         cell.textLabel?.text = articles[indexPath.row].title
+        //cell.imageView?.image = UIImage(named: articles[indexPath.row].urlToImage)
+        //print(articles[indexPath.row].urlToImage)
+        
         return cell
-      }
-    
+    }
+      
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         url = articles[indexPath.row].url
         
