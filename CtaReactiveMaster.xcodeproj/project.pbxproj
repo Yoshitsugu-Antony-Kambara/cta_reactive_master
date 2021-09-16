@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5B05B02578D07B007270C7 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B05AE2578D07B007270C7 /* HomeTableViewCell.swift */; };
+		3C5B05B12578D07B007270C7 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C5B05AF2578D07B007270C7 /* HomeTableViewCell.xib */; };
+		3C5B05B82578D144007270C7 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B05B72578D144007270C7 /* News.swift */; };
+		3C6EF3512574DE2B00A8F00A /* Res.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6EF3502574DE2B00A8F00A /* Res.swift */; };
+		3C6EF3572574DE9900A8F00A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6EF3552574DE9900A8F00A /* WebViewController.swift */; };
+		3C6EF3582574DE9900A8F00A /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6EF3562574DE9900A8F00A /* WebViewController.xib */; };
 		82796DEF2569247500443E2F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82796DED2569247500443E2F /* HomeViewController.swift */; };
 		82796DF02569247500443E2F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82796DEE2569247500443E2F /* HomeViewController.xib */; };
 		D848D49C2568190F008CA221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D848D49B2568190F008CA221 /* AppDelegate.swift */; };
@@ -31,6 +37,12 @@
 /* Begin PBXFileReference section */
 		1C60FABF91AC1EE82A06B299 /* Pods_CtaReactiveMaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CtaReactiveMaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D3A42BAEA28AAC2E9F16AE2 /* Pods_CtaReactiveMaster_CtaReactiveMasterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CtaReactiveMaster_CtaReactiveMasterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5B05AE2578D07B007270C7 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		3C5B05AF2578D07B007270C7 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		3C5B05B72578D144007270C7 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		3C6EF3502574DE2B00A8F00A /* Res.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Res.swift; sourceTree = "<group>"; };
+		3C6EF3552574DE9900A8F00A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		3C6EF3562574DE9900A8F00A /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		3FC7953F071F701FCC5EC101 /* Pods-CtaReactiveMasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CtaReactiveMasterTests.release.xcconfig"; path = "Target Support Files/Pods-CtaReactiveMasterTests/Pods-CtaReactiveMasterTests.release.xcconfig"; sourceTree = "<group>"; };
 		66491872529817495C7A15B5 /* Pods-CtaReactiveMasterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CtaReactiveMasterTests.debug.xcconfig"; path = "Target Support Files/Pods-CtaReactiveMasterTests/Pods-CtaReactiveMasterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		705E3A12E8A77B5A88182FE7 /* Pods_CtaReactiveMasterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CtaReactiveMasterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C5B05B42578D088007270C7 /* HomeTable */ = {
+			isa = PBXGroup;
+			children = (
+				3C5B05AE2578D07B007270C7 /* HomeTableViewCell.swift */,
+				3C5B05B72578D144007270C7 /* News.swift */,
+				3C5B05AF2578D07B007270C7 /* HomeTableViewCell.xib */,
+			);
+			path = HomeTable;
+			sourceTree = "<group>";
+		};
+		3C6EF3542574DE8A00A8F00A /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				3C6EF3552574DE9900A8F00A /* WebViewController.swift */,
+				3C6EF3562574DE9900A8F00A /* WebViewController.xib */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 		75F65BD4681690078A8C6410 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +115,8 @@
 		82796DE5256923ED00443E2F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3C5B05B42578D088007270C7 /* HomeTable */,
+				3C6EF3542574DE8A00A8F00A /* Web */,
 				82796E132569354A00443E2F /* Home */,
 				D848D49D2568190F008CA221 /* SceneDelegate.swift */,
 				D848D49B2568190F008CA221 /* AppDelegate.swift */,
@@ -106,6 +139,7 @@
 			children = (
 				82796DEE2569247500443E2F /* HomeViewController.xib */,
 				82796DED2569247500443E2F /* HomeViewController.swift */,
+				3C6EF3502574DE2B00A8F00A /* Res.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -247,6 +281,8 @@
 				D848D4A825681910008CA221 /* LaunchScreen.storyboard in Resources */,
 				D848D4A525681910008CA221 /* Assets.xcassets in Resources */,
 				82796DF02569247500443E2F /* HomeViewController.xib in Resources */,
+				3C5B05B12578D07B007270C7 /* HomeTableViewCell.xib in Resources */,
+				3C6EF3582574DE9900A8F00A /* WebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +364,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5B05B02578D07B007270C7 /* HomeTableViewCell.swift in Sources */,
 				D848D49C2568190F008CA221 /* AppDelegate.swift in Sources */,
 				D848D49E2568190F008CA221 /* SceneDelegate.swift in Sources */,
+				3C6EF3512574DE2B00A8F00A /* Res.swift in Sources */,
+				3C5B05B82578D144007270C7 /* News.swift in Sources */,
+				3C6EF3572574DE9900A8F00A /* WebViewController.swift in Sources */,
 				82796DEF2569247500443E2F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
